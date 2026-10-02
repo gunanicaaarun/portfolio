@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Real-time ISL recognition — Gunanicaa Arun</title>
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/colors.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/typography.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/radius.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/motion.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/tokens/base.css">
+<link rel="stylesheet" href="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/styles.css">
+<script src="_ds/guna-design-system-f29ead9c-89f8-4e88-9c79-eac244018b49/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--surface-page); color: var(--text-body); font-family: var(--font-body); letter-spacing: var(--ls-body); -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: var(--text-link); text-decoration: none; }
+  a:hover { color: var(--text-link-hover); }
+  ::selection { background: var(--lav-200); }
+</style>
+</helmet>
+
+<div style="width:100%;background:var(--surface-page);overflow-x:hidden">
+
+  <header style="max-width:var(--max-width-page);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:var(--space-7);padding:var(--space-5) var(--gutter-page-wide)">
+    <a href="index.html" style="font-family:var(--font-display);font-size:23px;font-weight:var(--fw-semibold);letter-spacing:var(--ls-heading);color:var(--text-display)">Gunanicaa</a>
+    <x-import component-from-global-scope="GunaDesignSystem_f29ead.TextLink" href="index.html#work" tone="ink" underline="hover" hint-size="auto,22px">Back to all work</x-import>
+  </header>
+
+  <section style="max-width:var(--max-width-page);margin:0 auto;padding:var(--space-10) var(--gutter-page-wide) var(--space-9)">
+    <div style="max-width:var(--max-width-prose);display:flex;flex-direction:column;gap:var(--space-3)">
+      <div style="font-family:var(--font-mono);font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--text-brand)">Final year project — 2024</div>
+      <h1 style="margin:0;font-family:var(--font-display);font-weight:var(--fw-semibold);font-size:var(--fs-display-2);line-height:var(--lh-display-2);letter-spacing:var(--ls-display);color:var(--text-display);text-wrap:pretty">Real-time ISL recognition</h1>
+      <p style="margin:var(--space-2) 0 0;max-width:var(--measure-lead);font-size:var(--fs-lead);line-height:var(--lh-lead);color:var(--text-muted);text-wrap:pretty">A hybrid CNN-RNN model for recognising Indian Sign Language in emergency situations, benchmarked against three other architectures to find the most viable real-time approach.</p>
+    </div>
+  </section>
+
+  <div style="max-width:var(--max-width-page);margin:0 auto;padding:0 var(--gutter-page-wide);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)">
+    <image-slot id="p03-hero" shape="rounded" radius="16" fit="cover" src="assets/isl/mediapipe-right.png" style="width:100%;aspect-ratio:16 / 9;display:block;background:#fff;box-shadow:var(--shadow-sm)" placeholder="MediaPipe hand tracking"></image-slot>
+    <image-slot id="p03-hero-b" shape="rounded" radius="16" fit="cover" src="assets/isl/mediapipe-left.png" style="width:100%;aspect-ratio:16 / 9;display:block;background:#fff;box-shadow:var(--shadow-sm)" placeholder="MediaPipe hand tracking"></image-slot>
+  </div>
+
+  <section style="max-width:var(--max-width-page);margin:0 auto;padding:var(--space-9) var(--gutter-page-wide) 0">
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--space-7);padding:var(--space-7) 0;border-top:1px solid var(--border-hairline);border-bottom:1px solid var(--border-hairline)">
+      <div style="display:flex;flex-direction:column;gap:var(--space-2)"><span style="font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand)">Role</span><span style="font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-display);text-wrap:pretty">Model design, implementation and evaluation (co-author)</span></div>
+      <div style="display:flex;flex-direction:column;gap:var(--space-2)"><span style="font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand)">Timeline</span><span style="font-family:var(--font-mono);font-size:var(--fs-caption);color:var(--text-display)">2023 — 2024</span></div>
+      <div style="display:flex;flex-direction:column;gap:var(--space-2)"><span style="font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand)">Team</span><span style="font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-display);text-wrap:pretty">With Pavithra Manikandan, guided by Dr. J. K. Josephine Julina</span></div>
+      <div style="display:flex;flex-direction:column;gap:var(--space-2)"><span style="font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand)">Outcome</span><span style="font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-display);text-wrap:pretty">97% accuracy. Paper submitted, not yet published</span></div>
+    </div>
+  </section>
+
+  <section style="max-width:var(--max-width-page);margin:0 auto;padding:var(--section-y-tight) var(--gutter-page-wide) 0;display:flex;flex-direction:column;gap:var(--space-9)">
+    <div style="display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--space-8);align-items:start">
+      <h2 style="margin:0;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand);padding-top:var(--space-2)">The problem</h2>
+      <p style="margin:0;max-width:var(--measure-prose);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);text-wrap:pretty">ISL has far less tooling and data than ASL, and existing research stopped at static images of alphabets and numerals. Nothing addressed real-time, sequential signs where communication is time-critical. We scoped it narrowly: could a model reliably recognise, in real time, the words that matter most when someone can’t speak — alive, dead, sick, fast, loud, mother, healthy?</p>
+    </div>
+    <div style="display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--space-8);align-items:start">
+      <h2 style="margin:0;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand);padding-top:var(--space-2)">Prior work and data</h2>
+      <div style="display:flex;flex-direction:column;gap:var(--space-5)">
+        <p style="margin:0;max-width:var(--measure-prose);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);text-wrap:pretty">We reviewed nine prior ISL recognition papers. None tested in real time, none modelled signs as motion over time, and accuracy on alphabet-only tasks topped out between 70 and 85%.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-6);max-width:var(--measure-prose)">
+          <div style="display:flex;flex-direction:column;gap:var(--space-2);padding-top:var(--space-4);border-top:1px solid var(--border-hairline)"><span style="font-family:var(--font-display);font-weight:var(--fw-semibold);font-size:var(--fs-h1);line-height:1;letter-spacing:var(--ls-heading);color:var(--lav-700)">4,287</span><span style="font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-body)">videos in INCLUDE, the first public ISL dataset, recorded with the deaf community</span></div>
+          <div style="display:flex;flex-direction:column;gap:var(--space-2);padding-top:var(--space-4);border-top:1px solid var(--border-hairline)"><span style="font-family:var(--font-display);font-weight:var(--fw-semibold);font-size:var(--fs-h1);line-height:1;letter-spacing:var(--ls-heading);color:var(--lav-700)">263</span><span style="font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-body)">signs in the full dataset</span></div>
+          <div style="display:flex;flex-direction:column;gap:var(--space-2);padding-top:var(--space-4);border-top:1px solid var(--border-hairline)"><span style="font-family:var(--font-display);font-weight:var(--fw-semibold);font-size:var(--fs-h1);line-height:1;letter-spacing:var(--ls-heading);color:var(--lav-700)">7</span><span style="font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-body)">emergency-relevant words we trained on</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--space-8);align-items:start">
+      <h2 style="margin:0;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand);padding-top:var(--space-2)">Approach</h2>
+      <div style="display:flex;flex-direction:column;gap:var(--space-4)">
+        <x-import component-from-global-scope="GunaDesignSystem_f29ead.Card" tone="lavender" padding="md" elevation="none" hint-size="100%,120px">
+          <h3 style="margin:0 0 var(--space-2);font-size:var(--fs-h4);line-height:var(--lh-h4);font-weight:var(--fw-semibold);color:var(--text-display)">Video over images</h3>
+          <p style="margin:0;font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-body)">Most prior work classified static images. We worked from video to capture how a sign moves, not just the hand’s shape at one instant, which is closer to how sign language is actually used.</p>
+        </x-import>
+        <x-import component-from-global-scope="GunaDesignSystem_f29ead.Card" tone="lavender" padding="md" elevation="none" hint-size="100%,120px">
+          <h3 style="margin:0 0 var(--space-2);font-size:var(--fs-h4);line-height:var(--lh-h4);font-weight:var(--fw-semibold);color:var(--text-display)">Benchmark four architectures, not one</h3>
+          <p style="margin:0;font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-body)">We compared CNN alone, CNN+RNN, CNN+RNN with MediaPipe, and YOLOv8, and let accuracy and loss decide. YOLOv8 located gestures precisely but couldn’t hold precision across confidence thresholds; the simpler MediaPipe combination generalised better.</p>
+        </x-import>
+        <x-import component-from-global-scope="GunaDesignSystem_f29ead.Card" tone="lavender" padding="md" elevation="none" hint-size="100%,120px">
+          <h3 style="margin:0 0 var(--space-2);font-size:var(--fs-h4);line-height:var(--lh-h4);font-weight:var(--fw-semibold);color:var(--text-display)">7 words, not 263</h3>
+          <p style="margin:0;font-size:var(--fs-small);line-height:var(--lh-small);color:var(--text-body)">Given time and compute, we chose depth and reliability on a use-case-relevant subset over breadth.</p>
+        </x-import>
+        <image-slot id="p03-research" shape="rounded" radius="16" fit="contain" src="assets/isl/pipeline.png" style="width:100%;height:300px;display:block;background:#fff;box-shadow:var(--shadow-sm)" placeholder="Pipeline diagram"></image-slot>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--space-8);align-items:start">
+      <h2 style="margin:0;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand);padding-top:var(--space-2)">The final model</h2>
+      <div style="display:flex;flex-direction:column;gap:var(--space-5)">
+        <p style="margin:0;max-width:var(--measure-prose);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);text-wrap:pretty">A hybrid CNN-RNN using MediaPipe hand tracking, recognising 7 emergency-relevant ISL signs in real time. It was the best of the four architectures tested.</p>
+        <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-4)">
+          <image-slot id="p03-shot-a" shape="rounded" radius="16" fit="cover" src="assets/isl/pred-loud.png" style="width:100%;aspect-ratio:16 / 9;display:block;background:#fff;box-shadow:var(--shadow-sm)" placeholder="Live prediction"></image-slot>
+          <image-slot id="p03-shot-b" shape="rounded" radius="16" fit="cover" src="assets/isl/pred-mother.png" style="width:100%;aspect-ratio:16 / 9;display:block;background:#fff;box-shadow:var(--shadow-sm)" placeholder="Live prediction"></image-slot>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--space-8);align-items:start">
+      <h2 style="margin:0;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand);padding-top:var(--space-2)">Results</h2>
+      <div style="display:flex;flex-direction:column;gap:var(--space-6)">
+        <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:var(--measure-prose)">
+          <div style="display:grid;grid-template-columns:200px minmax(0,1fr) 56px;gap:var(--space-4);align-items:center">
+            <span style="font-size:var(--fs-small);color:var(--text-display)">CNN</span>
+            <div style="height:12px;border-radius:var(--radius-pill);background:var(--lav-100);overflow:hidden"><div style="width:63%;height:100%;border-radius:var(--radius-pill);background:var(--lav-300)"></div></div>
+            <span style="font-family:var(--font-mono);font-size:var(--fs-caption);color:var(--text-display);text-align:right">63%</span>
+          </div>
+          <div style="display:grid;grid-template-columns:200px minmax(0,1fr) 56px;gap:var(--space-4);align-items:center">
+            <span style="font-size:var(--fs-small);color:var(--text-display)">CNN + RNN</span>
+            <div style="height:12px;border-radius:var(--radius-pill);background:var(--lav-100);overflow:hidden"><div style="width:80%;height:100%;border-radius:var(--radius-pill);background:var(--lav-300)"></div></div>
+            <span style="font-family:var(--font-mono);font-size:var(--fs-caption);color:var(--text-display);text-align:right">80%</span>
+          </div>
+          <div style="display:grid;grid-template-columns:200px minmax(0,1fr) 56px;gap:var(--space-4);align-items:center">
+            <span style="font-size:var(--fs-small);color:var(--text-display);font-weight:var(--fw-semibold)">CNN + RNN + MediaPipe</span>
+            <div style="height:12px;border-radius:var(--radius-pill);background:var(--lav-100);overflow:hidden"><div style="width:97%;height:100%;border-radius:var(--radius-pill);background:var(--lav-600)"></div></div>
+            <span style="font-family:var(--font-mono);font-size:var(--fs-caption);color:var(--text-display);text-align:right">97%</span>
+          </div>
+        </div>
+        <p style="margin:0;max-width:var(--measure-prose);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);text-wrap:pretty">The final model reached 97% accuracy and 0.1 loss, with F1 scores above 0.87 on every class. The findings are co-authored into a paper that has been submitted and is not yet published.</p>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--space-8);align-items:start">
+      <h2 style="margin:0;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand);padding-top:var(--space-2)">What I'd redo</h2>
+      <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:var(--measure-prose)">
+        <p style="margin:0;max-width:var(--measure-prose);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);text-wrap:pretty">We never tested the model’s real-time output with ISL signers. The dataset was recorded with community input, but for a project motivated by accessibility, not validating with the people it’s meant to serve is the biggest gap.</p>
+        <p style="margin:0;max-width:var(--measure-prose);font-size:var(--fs-body);line-height:var(--lh-body);color:var(--text-body);text-wrap:pretty">Seven signs is a proof of concept, not a deployable tool. Real use in an emergency needs far more vocabulary, and ISL varies by region; we trained on one dataset’s signing style and never checked against that variation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:var(--max-width-page);margin:0 auto;padding:var(--space-9) var(--gutter-page-wide) 0">
+    <div style="display:grid;grid-template-columns:180px minmax(0,1fr);gap:var(--space-8);align-items:start">
+      <h2 style="margin:0;font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;font-weight:var(--fw-semibold);color:var(--text-brand);padding-top:var(--space-3)">Project files</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-3)">
+        <x-import component-from-global-scope="GunaDesignSystem_f29ead.Button" as="a" href="assets/isl/ISL-Final-Presentation.pdf" target="_blank" rel="noopener" variant="outline" icon-left="fileText" hint-size="auto,44px">Final presentation (PDF)</x-import>
+        <x-import component-from-global-scope="GunaDesignSystem_f29ead.Button" as="a" href="assets/isl/ISL-Paper.pdf" target="_blank" rel="noopener" variant="outline" icon-left="fileText" hint-size="auto,44px">Research paper, submitted (PDF)</x-import>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:var(--max-width-page);margin:0 auto;padding:var(--section-y) var(--gutter-page-wide) 0">
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--space-5);padding-top:var(--space-7);border-top:1px solid var(--border-hairline)">
+      <x-import component-from-global-scope="GunaDesignSystem_f29ead.TextLink" href="index.html#work" tone="ink" underline="hover" hint-size="auto,24px">Back to all work</x-import>
+      <x-import component-from-global-scope="GunaDesignSystem_f29ead.TextLink" href="Project-01.dc.html" icon-right="arrowRight" hint-size="auto,24px">First project</x-import>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--border-hairline);margin-top:var(--section-y)">
+    <div style="max-width:var(--max-width-page);margin:0 auto;padding:var(--space-9) var(--gutter-page-wide) var(--space-8);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:var(--space-8)">
+      <div>
+        <div style="font-family:var(--font-display);font-size:26px;font-weight:var(--fw-semibold);color:var(--text-display)">Gunanicaa</div>
+        <p style="margin:var(--space-2) 0 0;font-size:var(--fs-small);color:var(--text-muted)">Product, mostly. New Hampshire, US.</p>
+      </div>
+      <div style="display:flex;gap:var(--space-6);font-size:var(--fs-small)">
+        <a href="index.html#work" style="color:var(--text-muted)">My work</a>
+        <a href="index.html#journey" style="color:var(--text-muted)">Journey</a>
+        <a href="mailto:gunanicaa.arun@gmail.com" style="color:var(--text-muted)">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

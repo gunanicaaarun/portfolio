@@ -1,0 +1,61 @@
+:root{
+/* --- Lavender: the brand ramp. Light end is used generously, dark end sparingly. --- */
+--lav-50:#F7F5FC;--lav-100:#EFEAFA;--lav-200:#E2DAF6;--lav-300:#CEC1EF;--lav-400:#B7A4E7;--lav-500:#9E88DC;--lav-600:#8870C8;--lav-700:#6F59A6;--lav-800:#57467E;--lav-900:#3A3055;
+
+/* --- Ink: warm-leaning neutrals, never pure black --- */
+--ink-900:#241F31;--ink-800:#3A3348;--ink-700:#524A63;--ink-600:#6E6682;--ink-500:#8F88A1;--ink-400:#B4AEC2;--ink-300:#D5D0E0;--ink-200:#E7E3F0;--ink-100:#F1EEF7;--ink-000:#FFFFFF;
+
+/* --- Companion accents. One per surface, max. Used for illustration fills,
+       highlight marks and semantic states — never as large page grounds. --- */
+--butter-200:#FCEFC4;--butter-400:#F5D682;--butter-600:#D9A93C;
+--sky-200:#D8ECFA;--sky-400:#8FC9EE;--sky-600:#3E8CBE;
+--sage-200:#DCEBE0;--sage-400:#9FCBAE;--sage-600:#4E8C68;
+--blush-200:#FBE0E4;--blush-400:#F2AEBA;--blush-600:#C2586E;
+
+/* --- Semantic surfaces --- */
+--surface-page:#F7F5FC;
+--surface-card:#FFFFFF;
+--surface-raised:#FFFFFF;
+--surface-sunken:#EFEAFA;
+--surface-accent:#E2DAF6;
+--surface-inverse:#241F31;
+--surface-subtle:#F1EEF7;
+
+/* --- Semantic text --- */
+--text-display:#241F31;
+--text-body:#3A3348;
+--text-muted:#6E6682;
+--text-faint:#8F88A1;
+--text-inverse:#FFFFFF;
+--text-brand:#6F59A6;
+--text-link:#6F59A6;
+--text-link-hover:#57467E;
+
+/* --- Lines --- */
+--border-hairline:#E7E3F0;
+--border-default:#D5D0E0;
+--border-strong:#B7A4E7;
+--border-inverse:#3A3348;
+
+/* --- Interactive --- */
+--action-primary:#8870C8;
+--action-primary-hover:#6F59A6;
+--action-primary-press:#57467E;
+--action-primary-text:#FFFFFF;
+--action-secondary:#EFEAFA;
+--action-secondary-hover:#E2DAF6;
+--action-secondary-press:#CEC1EF;
+--action-secondary-text:#57467E;
+--action-ghost-hover:#F1EEF7;
+--focus-ring:#B7A4E7;
+
+/* --- Status --- */
+--status-success-bg:#DCEBE0;--status-success-fg:#4E8C68;
+--status-warning-bg:#FCEFC4;--status-warning-fg:#9A7418;
+--status-info-bg:#D8ECFA;--status-info-fg:#3E8CBE;
+--status-danger-bg:#FBE0E4;--status-danger-fg:#C2586E;
+
+/* --- Doodle ink: the hand-drawn marks sit in these two colours only --- */
+--doodle-primary:#B7A4E7;
+--doodle-accent:#F5D682;
+}
